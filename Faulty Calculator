@@ -1,0 +1,33 @@
+#Faulty Calculator
+# 45 * 3 = 555, 56+9 = 77, 56/6 = 4
+# Design a calculator which will correctly solve all the problems except
+# the following ones:
+# 45 * 3 = 555, 56+9 = 77, 56/6 = 4
+# Your program should take operator  and the two numbers as input from the user
+# and then return the result
+print("Enter 1st number :- ")
+a=int(input())
+print("Enter 2nd number :- ")
+b=int(input())
+print("Enter the operation you want to perform :- ","+,-,*,/")
+c=input()
+if (a==45 and b==3 and c=='*'):
+    print("555")
+elif(a==56 and b==9 and c=="+"):
+    print("77")
+elif(a==56 and b==6 and c=="/"):
+    print("4")
+elif (c=="+"):
+    d=a+b
+    print(d)
+elif(c=="-"):
+    e=a-b
+    print(e)
+elif(c=="*"):
+    f=a*b
+    print(f)
+elif (c=="/"):
+    g=a/b
+    print(g)
+else:
+    print("Error")
