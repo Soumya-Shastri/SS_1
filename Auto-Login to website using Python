@@ -1,0 +1,16 @@
+!pip install --upgrade selenium
+from selenium import webdriver
+import os
+import time
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+url = "https://www.website.com/sign-in/?source=SC&country=IN"
+user = "0000000000000000000000000000"
+password = "xxxxx"
+driver.get(url)
+driver =webdriver.Chrome("C:Users\hp\Downloads\chromedriver_win32\chromedriver.exe")
+driver.find_element(By.XPATH,'//*[@id="username"]').send_keys(user)
+driver.find_element(By.XPATH,'//*[@id="password"]').send_keys(password)
+driver.find_element(By.XPATH,'//*[@id="recaptcha-anchor"]/div[4]').click()
+driver.find_element(By.XPATH,'//*[@id="signin-submit2"]').click()
+driver.quit(url)
