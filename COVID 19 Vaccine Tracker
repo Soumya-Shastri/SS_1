@@ -1,0 +1,22 @@
+!pip install bs4
+!pip install requests
+
+import requests
+from bs4 import BeautifulSoup 
+
+def get_data(url):
+    r = requests.get(url)
+    return r.text
+
+def extract_data(soup):
+    info = soup.find_all("Div", class_ = "is_h5-2 is_developer w-richtext" )
+    return [i.get_text() for i in info ]
+
+url = "https://covid-19tracker.milkeninstitute.org/"
+html_data = get_data(url)
+soup = BeautifulSoup(html_data, "html.parser")
+
+new_list = extract_data(soup)
+
+for i , info in enumerate(new_list, start= 1):
+    print(f"No {i}, {info}")
