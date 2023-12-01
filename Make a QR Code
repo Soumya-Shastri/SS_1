@@ -1,0 +1,5 @@
+pip install segno
+#Generating a simple QR Code
+QR_Code = segno.make_qr("Link of the file")
+QR_Code.save("Name of your choice")
+
