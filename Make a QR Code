@@ -3,3 +3,26 @@ pip install segno
 QR_Code = segno.make_qr("Link of the file")
 QR_Code.save("Name of your choice")
 
+#changing the size of QR Code
+import segno 
+image =segno.make_qr("https://www.youtube.com/watch?v=HogFvhtY0Zc")
+image.save("Simple_QR_size.png",scale = 10)
+
+#chaing the border of QR Code
+import segno 
+image = segno.make_qr("https://www.youtube.com/watch?v=HogFvhtY0Zc")
+image.save("Simple_QR_Size_Border.png", scale = 10, border = 5)
+
+#Command to find out where the file is being located
+import os
+print("Current Working Directory:", os.getcwd())
+
+#Changing color of the QR Code 
+#"light" keyword changes the backgroud color
+#"dark" keywork changes the black boxes of QR code to the color given to Dark
+import segno 
+img=segno.make_qr("https://www.youtube.com/watch?v=HogFvhtY0Zc")
+img.save("Colorful_QR.png", scale = 20, border = 5, light ='#FFFDD0', dark ='brown')
+#If you are getting an error in colour then find it hexadecimal value 
+
+
