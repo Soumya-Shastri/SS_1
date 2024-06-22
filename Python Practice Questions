@@ -1,3 +1,4 @@
+Question_1
 # You are given an array prices where prices[i] is the price of a given stock on the ith day.
 # You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
 # Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
@@ -11,7 +12,7 @@
 # Input: prices = [7,6,4,3,1]
 # Output: 0
 # Explanation: In this case, no transactions are done and the max profit = 0.
-
+Answer_1
 def max_diff(a_list):
     list_x = []
     for i in range(0, len(a_list)-1):
@@ -24,3 +25,23 @@ def max_diff(a_list):
             print(f"max_diff {max_y} is at {i} where array_1 is {a_list[i]} and at {i+1} where {a_list[i+1]}")
     
     return max_y if max_y >= 0 else 0
+
+---------------------------------------------------------------------------------------------------------------
+#Question_2
+#Checking whether the number is a Palindrome or not , reverse of the sentence should look like the sentence
+
+Answer_2
+def sentence(sent : str):
+    list_res = []
+    for i in sent:
+        z = (",",".",":",";","!","-","_","=","+"," ")
+        if not i.isdigit() and i not in z:
+            list_res.append(i.lower())
+    final = "".join(list_res)
+    palindrome = final[::-1]
+    
+    return "Yes, it is a plaindrome " if final == palindrome else "No, it is not a palindrome"
+sentence_1 = "A man, a plan, a canal Panama"
+print(sentence(sentence_1))
+sentence_2 = "race a car"
+print(sentence(sentence_2))
