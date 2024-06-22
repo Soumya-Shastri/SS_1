@@ -1,0 +1,129 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "gpuType": "T4",
+      "authorship_tag": "ABX9TyPJ5hTA/xA1Ii1hYOs8Qtqh"
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "accelerator": "GPU"
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "etrMWX3QeCAb",
+        "outputId": "5d2c7246-2018-4165-a419-e3912ed51711"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Sat Jun 22 10:32:32 2024       \n",
+            "+---------------------------------------------------------------------------------------+\n",
+            "| NVIDIA-SMI 535.104.05             Driver Version: 535.104.05   CUDA Version: 12.2     |\n",
+            "|-----------------------------------------+----------------------+----------------------+\n",
+            "| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |\n",
+            "| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |\n",
+            "|                                         |                      |               MIG M. |\n",
+            "|=========================================+======================+======================|\n",
+            "|   0  Tesla T4                       Off | 00000000:00:04.0 Off |                    0 |\n",
+            "| N/A   52C    P8              10W /  70W |      0MiB / 15360MiB |      0%      Default |\n",
+            "|                                         |                      |                  N/A |\n",
+            "+-----------------------------------------+----------------------+----------------------+\n",
+            "                                                                                         \n",
+            "+---------------------------------------------------------------------------------------+\n",
+            "| Processes:                                                                            |\n",
+            "|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |\n",
+            "|        ID   ID                                                             Usage      |\n",
+            "|=======================================================================================|\n",
+            "|  No running processes found                                                           |\n",
+            "+---------------------------------------------------------------------------------------+\n"
+          ]
+        }
+      ],
+      "source": [
+        "!nvidia-smi"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Cuda Cores - the are processing units in GPU , higher the number better the performance\n",
+        "#for Tesla T4 is 2560"
+      ],
+      "metadata": {
+        "id": "SNM5ww6rfp4A"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "v2fITApofqKs"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "-jLJbAdOfqQT"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "qUFJoHaFfqSN"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "F0mP9nL0fqW5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "gBImw6VafqZL"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "x2yN0PwHfqdd"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
